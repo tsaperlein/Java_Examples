@@ -7,15 +7,22 @@
  * 3. Repeat steps 2 'n' times just before you reach the original starting postiion.
  * 4. Place the next number in the same column one row below the last number and continuue with step 2.
  * 
- * Basically, you're placubg the nnymbers in consecutive order diagonally up and to the right until all spaces are filled.
+ * Basically, you're placing the numbers in consecutive order diagonally up and to the right until all spaces are filled.
  */
+
+import java.util.Scanner;
 
 public class MagicSquare {
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {
 
-		// create a 2D array of size 5x5
-		int n = 5;
+		scan = new Scanner(System.in);
+		System.out.print("Enter the size of the magic square: ");
+		int n = scan.nextInt();
+
+		// create a 2D array of size nxn
 		int[][] magicSquare = new int[n][n];
 
 		int row = 0; 		// top row
