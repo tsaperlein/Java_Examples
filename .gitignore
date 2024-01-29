@@ -1,1 +1,2 @@
-*.class
+# Ingore all class files
+**.class
